@@ -20,10 +20,10 @@ function seleccionPago() {
             cuotas = prompt('Indique en cuantas cuotas desea pagar: \n3 cuotas - Recargo del 10%.\n6 cuotas - Recargo del 35%');
             if (cuotas == "3") {
                 totalPago = total + (total * 0.10);
-                alert('El total a pagar son 3 cuotas de $' + totalPago);
+                alert('El total de tu compra es de $' + totalPago + ' a pagar en 3 cuotas de $' + (totalPago/3));
             } else if (cuotas == "6") {
                 totalPago = total + (total * 0.35);
-                alert('El total a pagar son 6 cuotas de $' + (totalPago/6));
+                alert('El total de tu compra es de $' + totalPago + ' a pagar en 6 cuotas de $' + (totalPago/6));
             } else {
                 alert('Solo se puede abonar en 3 o 6 cuotas')
             }
