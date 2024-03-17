@@ -23,7 +23,7 @@ function seleccionPago() {
                 alert('El total a pagar son 3 cuotas de $' + totalPago);
             } else if (cuotas == "6") {
                 totalPago = total + (total * 0.35);
-                alert('El total a pagar son 6 cuotas de $' + totalPago);
+                alert('El total a pagar son 6 cuotas de $' + (totalPago/6));
             } else {
                 alert('Solo se puede abonar en 3 o 6 cuotas')
             }
